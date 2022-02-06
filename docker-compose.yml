@@ -1,0 +1,12 @@
+version: "3.6"
+services:
+  docmaker:
+    image: hurricanelabs/docmaker:latest
+    build: .
+    container_name: docmaker
+    restart: always
+    environment:
+      - "DOCMAKER_INSTALL_FONT1=https://fonts.google.com/download?family=Roboto"
+    ports:
+      - "8080:8080"
+      - "8443:8443"

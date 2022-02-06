@@ -1,0 +1,2 @@
+include versioneer.py
+include docmaker/_version.py
